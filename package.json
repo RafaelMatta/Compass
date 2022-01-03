@@ -4,7 +4,7 @@
   "description": "Compass webpage",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass style/main.scss style/css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
@@ -13,7 +13,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Matta",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "concat": "^1.0.3",
