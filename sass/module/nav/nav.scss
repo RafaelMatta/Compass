@@ -1,0 +1,45 @@
+.nav{
+    width: 100%;
+
+    &__wpr-u{
+        background-color: $color-dark-grey-1;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wpr-d{
+
+    }
+
+    &__notification,
+    &__menu,
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+
+    &__notification{
+        gap: 1rem;
+
+    }
+
+    &__btn{
+        border-radius: 50px;
+        font-weight: 400;
+        padding: 1rem 2rem;
+        background-color: $color-primary;
+    }
+
+    &__alert-text{
+        font-size: 1.8rem;
+    }
+
+    &__menu{
+        
+    }
+
+    &__list{
+
+    }
+}
