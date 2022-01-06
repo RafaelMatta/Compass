@@ -1,0 +1,11 @@
+.btn{
+    &,
+    &::after,
+    &::before{
+        outline: none;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
