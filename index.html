@@ -10,7 +10,7 @@
 
 <body>
 
-    <nav class="nav">
+    <div class="nav">
         <div class="nav__wpr-u">
             <div class="container">
                 <div class="nav__notification">
@@ -24,17 +24,22 @@
                 <div class="nav__menu">
                     <img src="/assets/logo/logo.png" alt="" class="nav__logo">
                     <ul class="nav__list">
-                        <li class="nav__item nav__link">Home</li>
-                        <li class="nav__item nav__link">About</li>
-                        <li class="nav__item nav__link">Shop</li>
-                        <li class="nav__item nav__link">Donate</li>
-                        <li class="nav__item nav__link">Contact</li>
+                        <li class="nav__item"><a href="#" class="link nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="link nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="link nav__link">Shop</a></li>
+                        <li class="nav__item"><a href="#" class="link nav__link">Donate</a></li>
+                        <li class="nav__item"><a href="#" class="link nav__link">Contact</a></li>
                     </ul>
-                    <button class="btn btn--squared btn--dark">cart</button>
+                    <button class="nav__cart btn btn--squared btn--dark">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="/assets/icon/cart.svg#icon-cart"></use>
+                        </svg>
+                        <div class="btn__count">0</div>
+                    </button>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
     <header class="header"></header>
     <div class="about"></div>
     <div class="statement"></div>
