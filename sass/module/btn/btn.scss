@@ -2,10 +2,36 @@
     &,
     &::after,
     &::before{
+        position: relative;
         outline: none;
         background-color: transparent;
         border: none;
         color: #fff;
         font-size: 1.6rem;
+        cursor: pointer;
     }
+
+    &__count{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-weight: 700;
+        height: 2rem;
+        width: 2rem;
+        padding: .25rem;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $color-dark-grey-1;
+        transform: translate(50%, -50%);
+    }
+
+    &--squared{
+        border-radius: 5px;
+    }
+
+    &--dark{
+        background-color: $color-dark-grey-1;
+    }
+
 }
