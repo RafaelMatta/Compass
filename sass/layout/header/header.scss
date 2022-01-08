@@ -1,0 +1,24 @@
+.header{
+    background: linear-gradient(transparent, $color-dark-grey-1), url("../../../assets/img/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    &__wpr{
+        width: 35%;
+        min-height: 55rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__title{
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
