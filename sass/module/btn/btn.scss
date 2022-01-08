@@ -2,11 +2,12 @@
     &,
     &::after,
     &::before{
+        font-family: 'Sen', sans-serif;
         position: relative;
         outline: none;
         background-color: transparent;
         border: none;
-        color: #fff;
+        color: $color-light-1;
         font-size: 1.6rem;
         cursor: pointer;
     }
@@ -21,7 +22,7 @@
         padding: .25rem;
         font-size: 1.2rem;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $color-light-1;
         color: $color-dark-grey-1;
         transform: translate(50%, -50%);
     }
@@ -32,6 +33,19 @@
 
     &--dark{
         background-color: $color-dark-grey-1;
+    }
+
+    &--transparent{
+        border: 2px solid $color-light-1;
+        padding: .5rem 2.5rem;
+        font-weight: 700;
+        transition: all .4s ease;
+        text-transform: capitalize;
+
+        &:hover{
+            background-color: $color-light-1;
+            color: $color-dark-grey-1;
+        }
     }
 
 }
