@@ -9,6 +9,16 @@ body {
   font-weight: 700;
   line-height: 1.2; }
 
+.heading-2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.heading-3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-weight: 700; }
+
 *,
 *::before,
 *::after {
@@ -45,6 +55,12 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 1.5rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3rem;
+  column-gap: 6rem; }
 
 .btn, .btn::after, .btn::before {
   font-family: 'Sen', sans-serif;
@@ -138,3 +154,48 @@ body {
   .nav__icon {
     height: 2rem;
     width: 2rem; }
+
+.about {
+  padding: 6.5rem;
+  color: #222; }
+  .about__header {
+    grid-column: 1 / 4; }
+  .about__message {
+    font-size: 1.6rem;
+    grid-column: 4 / -1; }
+  .about__support-column {
+    grid-column: span 2; }
+  .about__description {
+    font-size: 1.6rem; }
+
+.card {
+  background-color: #222;
+  min-height: 35rem;
+  position: relative;
+  overflow: hidden;
+  color: #f9f9f9;
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 4rem; }
+  .card__number {
+    position: absolute;
+    left: 10%;
+    top: 10%; }
+  .card__title {
+    text-align: center; }
+  .card__img {
+    position: absolute; }
+    .card__img--1 {
+      right: -25%;
+      bottom: -25%; }
+    .card__img--2 {
+      right: -11%;
+      bottom: -17%; }
+    .card__img--3 {
+      right: -14%;
+      bottom: -31%; }
