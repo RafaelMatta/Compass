@@ -6,6 +6,10 @@ body{
     line-height: 1.5;
 }
 
+.paragraph{
+    font-size: 1.6rem;
+}
+
 .heading{
     &-1{
         font-size: 6.2rem;
@@ -22,6 +26,11 @@ body{
     &-3{
         font-size: 4rem;
         text-transform: capitalize;
+        font-weight: 700;
+    }
+
+    &-4{
+        font-size: 4.5rem;
         font-weight: 700;
     }
 }

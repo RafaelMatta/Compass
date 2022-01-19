@@ -35,6 +35,20 @@
         background-color: $color-dark-grey-1;
     }
 
+    &--white{
+        background-color: $color-light-1;
+        color: $color-dark-grey-1;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding: 1rem 2.5rem;
+        transition: all .4s ease;
+
+        &:hover{
+            color: $color-light-1;
+            background-color: $color-primary;
+        }
+    }
+
     &--transparent{
         border: 2px solid $color-light-1;
         padding: .5rem 2.5rem;
