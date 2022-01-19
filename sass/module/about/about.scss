@@ -7,15 +7,10 @@
     }
 
     &__message{
-        font-size: 1.6rem;
         grid-column: 4 / -1;
     }
 
     &__support-column{
         grid-column: span 2;
-    }
-
-    &__description{
-        font-size: 1.6rem;
     }
 }
