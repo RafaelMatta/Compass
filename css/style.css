@@ -99,7 +99,22 @@ body {
   border-radius: 5px; }
 
 .btn--dark {
-  background-color: #222; }
+  background-color: #222;
+  padding: .7rem 2.5rem;
+  font-weight: 700;
+  transition: all .4s ease;
+  text-transform: capitalize; }
+  .btn--dark:hover {
+    background-color: #26afd8; }
+
+.btn--blue {
+  background-color: #26afd8;
+  padding: .8rem 2.5rem;
+  font-weight: 700;
+  transition: all .2s ease;
+  text-transform: capitalize; }
+  .btn--blue:hover {
+    background-color: #222; }
 
 .btn--white {
   background-color: #f9f9f9;
@@ -233,3 +248,49 @@ body {
   .statement__paragraph {
     width: 35%;
     margin-bottom: 2.5rem; }
+
+.shop {
+  padding: 6.5rem 0;
+  color: #222; }
+  .shop__header, .shop__grid {
+    margin-bottom: 4rem; }
+  .shop__more {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.product {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; }
+  .product__picture {
+    min-height: 50rem;
+    width: 100%;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer; }
+    .product__picture--1 {
+      background-image: url("../../../assets/item/1_item.jpg"); }
+    .product__picture--2 {
+      background-image: url("../../../assets/item/2_item.jpg"); }
+    .product__picture--3 {
+      background-image: url("../../../assets/item/3_item.jpg"); }
+  .product__name {
+    font-size: 2rem;
+    text-transform: capitalize; }
+  .product__price {
+    font-size: 1.4rem;
+    font-weight: 700; }
+  .product__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .product__offer {
+    display: flex;
+    gap: 1rem; }
+  .product__discount {
+    color: #26afd8;
+    text-decoration: line-through; }
