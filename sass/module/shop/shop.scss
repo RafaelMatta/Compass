@@ -1,0 +1,15 @@
+.shop{
+    padding: 6.5rem 0;
+    color: $color-dark-grey-1;
+
+    &__header,
+    &__grid{
+        margin-bottom: 4rem;
+    }
+
+    &__more{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

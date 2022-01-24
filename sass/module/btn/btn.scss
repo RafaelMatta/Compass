@@ -33,6 +33,26 @@
 
     &--dark{
         background-color: $color-dark-grey-1;
+        padding: .7rem 2.5rem;
+        font-weight: 700;
+        transition: all .4s ease;
+        text-transform: capitalize;
+
+        &:hover{
+            background-color: $color-primary;
+        }
+    }
+
+    &--blue{
+        background-color: $color-primary;
+        padding: .8rem 2.5rem;
+        font-weight: 700;
+        transition: all .2s ease;
+        text-transform: capitalize;
+
+        &:hover{
+            background-color: $color-dark-grey-1;
+        }
     }
 
     &--white{
