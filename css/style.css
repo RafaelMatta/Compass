@@ -146,7 +146,10 @@ body {
   color: #fff; }
 
 .nav {
-  width: 100%; }
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000; }
   .nav__wpr-u, .nav__wpr-d {
     padding: 2rem; }
   .nav__wpr-u {
