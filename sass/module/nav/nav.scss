@@ -1,5 +1,8 @@
 .nav{
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     &__wpr-u,
     &__wpr-d{
