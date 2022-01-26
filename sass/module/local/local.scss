@@ -1,0 +1,46 @@
+.local{
+    padding: 6.5rem 0;
+
+    &__wpr{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__details{
+        width: 80%;
+        background-color: $color-dark-grey-1;
+        min-height: 50rem;
+        padding: 4rem;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 5px;
+    }
+
+    &__img{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 30%;
+        height: 44rem;
+        transform: translateY(-50%);
+        background-image: url("../../../assets/img/shopping.jpeg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+    }
+
+    &__information{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__information-wpr{
+        padding: 0 14.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+}
