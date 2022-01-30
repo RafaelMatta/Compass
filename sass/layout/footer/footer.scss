@@ -1,0 +1,15 @@
+.footer{
+    padding: 6.5rem 0;
+    background-color: $color-dark-grey-1;
+
+    &__sm{
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__wpr{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+}
