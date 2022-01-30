@@ -60,6 +60,16 @@ body {
   .header__paragraph {
     margin-bottom: 1.5rem; }
 
+.footer {
+  padding: 6.5rem 0;
+  background-color: #222; }
+  .footer__sm {
+    display: flex;
+    gap: 1rem; }
+  .footer__wpr {
+    display: flex;
+    justify-content: space-between; }
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -139,7 +149,9 @@ body {
 
 .icon {
   fill: #fff;
-  display: block; }
+  display: inline-block;
+  height: 3rem;
+  width: 3rem; }
 
 .link, .link:link, .link:visited {
   text-decoration: none;
@@ -174,7 +186,6 @@ body {
   .nav__menu {
     width: 100%; }
   .nav__logo {
-    height: 3rem;
     margin-right: auto; }
   .nav__list {
     justify-content: space-around;
@@ -194,7 +205,7 @@ body {
     width: 2rem; }
 
 .about {
-  padding: 6.5rem;
+  padding: 6.5rem 0;
   color: #222; }
   .about__header {
     grid-column: 1 / 4; }
@@ -332,3 +343,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
+
+.logo {
+  height: 3rem; }
