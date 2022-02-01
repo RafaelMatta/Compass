@@ -3,4 +3,8 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
     column-gap: 6rem;
+
+    @media only screen and (max-width: $bp-medium){
+        column-gap: 3rem;
+    }
 }

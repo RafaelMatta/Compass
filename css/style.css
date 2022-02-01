@@ -58,6 +58,9 @@ body {
     @media only screen and (max-width: 65.625em) {
       .header__wpr {
         width: 50%; } }
+    @media only screen and (max-width: 48.125em) {
+      .header__wpr {
+        width: 80%; } }
   .header__title {
     margin-bottom: 1rem; }
   .header__paragraph {
@@ -71,7 +74,24 @@ body {
     gap: 1rem; }
   .footer__wpr {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 4rem; }
+  .footer__paragraph {
+    text-align: center;
+    font-size: 1.4rem; }
+    @media only screen and (max-width: 48.125em) {
+      .footer__paragraph {
+        font-size: 1.2rem; } }
+  .footer__link {
+    color: #26afd8;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: all .2s ease;
+    text-decoration: none; }
+  .footer__link:hover {
+    color: #f9f9f9;
+    background-color: #26afd8;
+    padding: .5rem .5rem; }
 
 .container {
   max-width: 120rem;
@@ -83,6 +103,9 @@ body {
   grid-template-columns: repeat(6, 1fr);
   gap: 3rem;
   column-gap: 6rem; }
+  @media only screen and (max-width: 59.375em) {
+    .grid {
+      column-gap: 3rem; } }
 
 .btn, .btn::after, .btn::before {
   font-family: 'Sen', sans-serif;
@@ -197,6 +220,9 @@ body {
   .nav__notification {
     gap: 1rem;
     justify-content: center; }
+    @media only screen and (max-width: 48.125em) {
+      .nav__notification {
+        flex-direction: column-reverse; } }
   .nav__btn {
     font-size: 1.6rem;
     border-radius: 50px;
@@ -283,10 +309,19 @@ body {
   color: #222; }
   .about__header {
     grid-column: 1 / 4; }
+    @media only screen and (max-width: 48.125em) {
+      .about__header {
+        grid-column: 1 / -1; } }
   .about__message {
     grid-column: 4 / -1; }
+    @media only screen and (max-width: 48.125em) {
+      .about__message {
+        grid-column: 1 / -1; } }
   .about__support-column {
     grid-column: span 2; }
+    @media only screen and (max-width: 48.125em) {
+      .about__support-column {
+        grid-column: 1 / -1; } }
 
 .card {
   background-color: #222;
@@ -332,10 +367,22 @@ body {
     flex-direction: column;
     text-align: right; }
   .statement__heading {
-    width: 45%; }
+    width: 50%; }
+    @media only screen and (max-width: 65.625em) {
+      .statement__heading {
+        width: 60%; } }
+    @media only screen and (max-width: 48.125em) {
+      .statement__heading {
+        width: 80%; } }
   .statement__paragraph {
     width: 35%;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 65.625em) {
+      .statement__paragraph {
+        width: 50%; } }
+    @media only screen and (max-width: 48.125em) {
+      .statement__paragraph {
+        width: 80%; } }
 
 .shop {
   padding: 6.5rem 0;
@@ -353,6 +400,12 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem; }
+  @media only screen and (max-width: 59.375em) {
+    .product {
+      grid-column: span 3; } }
+  @media only screen and (max-width: 48.125em) {
+    .product {
+      grid-column: 1 / -1; } }
   .product__picture {
     min-height: 50rem;
     width: 100%;
@@ -360,6 +413,9 @@ body {
     background-size: cover;
     background-position: center;
     cursor: pointer; }
+    @media only screen and (max-width: 59.375em) {
+      .product__picture {
+        min-height: 35rem; } }
     .product__picture--1 {
       background-image: url("../../../assets/item/1_item.jpg"); }
     .product__picture--2 {
@@ -385,6 +441,9 @@ body {
 
 .local {
   padding: 6.5rem 0; }
+  @media only screen and (max-width: 48.125em) {
+    .local {
+      padding: 0 0 6.5rem 0; } }
   .local__wpr {
     display: flex;
     justify-content: flex-end;
@@ -397,6 +456,10 @@ body {
     display: flex;
     justify-content: flex-end;
     border-radius: 5px; }
+    @media only screen and (max-width: 48.125em) {
+      .local__details {
+        width: 100%;
+        border-radius: 0; } }
   .local__img {
     position: absolute;
     top: 50%;
@@ -408,10 +471,27 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 5px; }
+    @media only screen and (max-width: 48.125em) {
+      .local__img {
+        display: none; } }
+  .local__img-mobile {
+    width: 100%;
+    min-height: 44rem;
+    background-image: url("../../../assets/img/shopping.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: none; }
+    @media only screen and (max-width: 48.125em) {
+      .local__img-mobile {
+        display: block; } }
   .local__information {
     width: 80%;
     display: flex;
     justify-content: flex-end; }
+    @media only screen and (max-width: 48.125em) {
+      .local__information {
+        width: 100%;
+        justify-content: initial; } }
   .local__information-wpr {
     padding: 0 14.5rem;
     display: flex;

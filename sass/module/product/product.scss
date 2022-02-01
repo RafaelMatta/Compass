@@ -4,6 +4,15 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    @media only screen and (max-width: $bp-medium){
+        grid-column: span 3;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: 1 / -1;
+    }
+
     &__picture{
         min-height: 50rem;
         width: 100%;
@@ -11,6 +20,10 @@
         background-size: cover;
         background-position: center;
         cursor: pointer;
+
+        @media only screen and (max-width: $bp-medium){
+            min-height: 35rem;
+        }
 
         &--1{
             background-image: url("../../../assets/item/1_item.jpg");

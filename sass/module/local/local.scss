@@ -1,6 +1,10 @@
 .local{
     padding: 6.5rem 0;
 
+    @media only screen and (max-width: $bp-small){
+        padding: 0 0 6.5rem 0;
+    }
+
     &__wpr{
         display: flex;
         justify-content: flex-end;
@@ -15,6 +19,11 @@
         display: flex;
         justify-content: flex-end;
         border-radius: 5px;
+        
+        @media only screen and (max-width: $bp-small){
+            width: 100%;
+            border-radius: 0;
+        }
     }
 
     &__img{
@@ -28,12 +37,34 @@
         background-size: cover;
         background-position: center;
         border-radius: 5px;
+
+        @media only screen and (max-width: $bp-small){
+            display: none;
+        }
+    }
+
+    &__img-mobile{
+        width: 100%;
+        min-height: 44rem;
+        background-image: url("../../../assets/img/shopping.jpeg");
+        background-size: cover;
+        background-position: center;
+        display: none;
+
+        @media only screen and (max-width: $bp-small){
+            display: block;
+        }
     }
 
     &__information{
         width: 80%;
         display: flex;
         justify-content: flex-end;
+
+        @media only screen and (max-width: $bp-small){
+            width: 100%;
+            justify-content: initial;
+        }
     }
 
     &__information-wpr{
