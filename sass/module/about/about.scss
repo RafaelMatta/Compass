@@ -4,13 +4,23 @@
 
     &__header{
         grid-column: 1 / 4;
+        @media only screen and (max-width: $bp-small){
+            grid-column: 1 / -1;
+        }
     }
 
     &__message{
         grid-column: 4 / -1;
+        @media only screen and (max-width: $bp-small){
+            grid-column: 1 / -1;
+        }
     }
 
     &__support-column{
         grid-column: span 2;
+
+        @media only screen and (max-width: $bp-small){
+            grid-column: 1 / -1;
+        }
     }
 }

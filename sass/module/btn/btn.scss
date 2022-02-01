@@ -82,4 +82,30 @@
         }
     }
 
+    &--sandwich{
+        position: relative;
+    }
+
+    &--sandwich,
+    &--sandwich::before,
+    &--sandwich::after{
+        width: 2rem;
+        height: 3px;
+        background-color: $color-light-1;
+        transition: all .2s ease;
+    }
+    
+    &--sandwich::before,
+    &--sandwich::after{
+        content: "";
+        position: absolute;
+    }
+
+    &--sandwich::after{
+        top: 7px;
+    }
+    &--sandwich::before{
+        top: -7px;
+    }
 }
+
