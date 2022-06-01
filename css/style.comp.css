@@ -44,7 +44,7 @@ body {
   min-height: 100%; }
 
 .header {
-  background: linear-gradient(transparent, #222), url("../assets/img/hero.jpeg");
+  background: linear-gradient(transparent, #222), url("../../../assets/img/hero.jpeg");
   background-size: cover;
   background-position: center; }
   .header__wpr {
@@ -356,7 +356,7 @@ body {
       bottom: -31%; }
 
 .statement {
-  background: linear-gradient(transparent, #222), url("../assets/img/travel_1.jpeg");
+  background: linear-gradient(transparent, #222), url("../../../assets/img/travel_1.jpeg");
   background-size: cover;
   background-position: center; }
   .statement__wpr {
@@ -467,7 +467,7 @@ body {
     width: 30%;
     height: 44rem;
     transform: translateY(-50%);
-    background-image: url("../assets/img/shopping.jpeg");
+    background-image: url("../../../assets/img/shopping.jpeg");
     background-size: cover;
     background-position: center;
     border-radius: 5px; }
@@ -477,7 +477,7 @@ body {
   .local__img-mobile {
     width: 100%;
     min-height: 44rem;
-    background-image: url("../assets/img/shopping.jpeg");
+    background-image: url("../../../assets/img/shopping.jpeg");
     background-size: cover;
     background-position: center;
     display: none; }
